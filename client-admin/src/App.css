@@ -1,0 +1,149 @@
+/* ===== LAYOUT ===== */
+
+.body-customer {
+  width: 1150px;
+  margin: 0 auto;
+}
+
+.body-admin {
+  width: 1150px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.align-center {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+span.link {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+/* ===== MENU ===== */
+
+div.border-bottom {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+div.float-left {
+  float: left;
+}
+
+div.float-right {
+  float: right;
+}
+
+div.float-clear {
+  clear: both;
+}
+
+ul.menu {
+  margin: 0;
+  padding: 0;
+}
+
+li.menu {
+  display: inline;
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+
+/* ===== SEARCH ===== */
+
+form.search {
+  margin: 0;
+}
+
+input.keyword {
+  width: 120px;
+  padding: 4px;
+}
+
+/* ===== CUSTOMER TABLE ===== */
+
+.datatable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.datatable th {
+  background-color: #ffcc00;
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-weight: bold;
+}
+
+.datatable td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.datatable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.datatable tr:nth-child(odd) {
+  background-color: #fff4cc;
+}
+
+.datatable tr:hover {
+  background-color: #e8f4ff;
+}
+
+/* ===== BUTTON ===== */
+
+button {
+  background-color: #ffc107;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #e0a800;
+}
+
+/* ===== STATUS ===== */
+
+.active {
+  color: green;
+  font-weight: bold;
+}
+
+.inactive {
+  color: red;
+  font-weight: bold;
+}
+
+/* ===== PAGE BACKGROUND ===== */
+
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, Helvetica, sans-serif;
+
+  /* FIX HEADER CHE NỘI DUNG */
+  padding-top: 80px;
+}
+
+/* ===== FOOTER ===== */
+
+.footer-container {
+  background-color: #d70018;
+  color: white;
+  padding: 20px;
+  margin-top: 40px;
+  text-align: center;
+}

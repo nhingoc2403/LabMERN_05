@@ -1,0 +1,537 @@
+/* styles.css */
+.body-customer {
+  width: 1150px;
+  height: fit-content;
+  margin: 0 auto;
+}
+
+.body-admin {
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+}
+
+div.inline {
+  display: inline-block;
+}
+
+figure.caption-right {
+  display: flex;
+  align-items: center;
+}
+
+.align-center {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.align-valign-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.text-center {
+  text-align: center;
+}
+
+span.link {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+/* menu.css */
+div.border-bottom {
+  border-bottom: 1px solid black;
+  padding: 10px 0;
+}
+
+div.float-left {
+  float: left;
+}
+
+div.float-right {
+  float: right;
+}
+
+div.float-clear {
+  clear: both;
+}
+
+ul.menu {
+  margin: 0;
+  padding: 0;
+}
+
+li.menu {
+  display: inline;
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+
+form.search {
+  margin: 0;
+}
+
+input.keyword {
+  width: 110px;
+}
+
+/* datatable.css */
+.datatable {
+  text-align: center;
+  border-collapse: collapse;
+}
+
+/* header */
+.datatable tr:first-child {
+  background-color: #ffcc00;
+}
+
+/* even rows, except header */
+.datatable tr:not(:first-child):nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+/* odd rows, except header */
+.datatable tr:not(:first-child):nth-child(odd) {
+  background-color: #ffeeaa;
+}
+
+/* hover effect except header */
+.datatable tr:not(:first-child):hover {
+  background-color: #dcfcfc;
+  cursor: pointer;
+}
+/* Căn giữa trang */
+div {
+  text-align: center;
+}
+
+/* Tạo khoảng cách cho các phần tử trong form */
+form {
+  display: block;
+  margin: 20px auto;
+  width: 300px;
+}
+
+/* Đảm bảo mỗi input và label hiển thị trên dòng riêng biệt */
+form div {
+  margin-bottom: 15px;
+}
+.my-cart-container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f4f4f4;
+}
+
+/* button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+} */
+
+/* button:hover {
+  background-color: #45a049;
+} */
+
+.total-amount {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.checkout-button {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.checkout-button button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.checkout-button button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Styles */
+.footer-container {
+  background-color: #f1f1f1;
+  padding: 40px 0;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left, .footer-middle, .footer-right {
+  width: 30%;
+}
+
+.footer-left h3 {
+  color: #D6342D;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  color: #777;
+  font-size: 16px;
+}
+
+.footer-middle h4, .footer-right h4 {
+  color: #D6342D;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.footer-middle ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer-middle li {
+  color: #777;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #D6342D;
+}
+
+.footer-bottom {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+/* Cải tiến giao diện sản phẩm */
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 60%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-card .product-info {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.product-card .product-info h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.product-card .product-info .price {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ff6347;
+}
+
+/* Tối ưu header */
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+header .search-bar input {
+  padding: 8px;
+  width: 200px;
+  border-radius: 15px;
+  border: none;
+}
+
+header .cart {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Tiêu đề */
+h2.text-center {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+/* Menu container */
+.menu-container {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 100%; /* Ensure it takes up the full width */
+  margin: 0;
+  position: relative;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px; /* Optional: add some padding to the left and right */
+}
+
+/* Menu list */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* This will spread the menu items evenly across the entire width */
+  width: 100%;
+}
+
+/* Menu item */
+.menu-item {
+  margin-right: 20px; /* Space between items */
+  padding: 10px 0;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.menu-item a:hover {
+  color: #007bff;
+}
+
+/* Search Bar */
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  padding: 5px 10px;
+  background-color: #f8f8f8;
+}
+
+.search-input {
+  padding: 8px;
+  border: none;
+  outline: none;
+  width: 250px;
+  border-radius: 25px;
+  font-size: 14px;
+  color: #333;
+}
+
+.search-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.search-button i {
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .menu {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .menu-item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .search-form {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .search-input {
+    width: 80%;
+  }
+}
+/* src/components/Inform.css */
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #ddd;
+  font-family: 'Arial', sans-serif;
+}
+
+.info-left, .info-right {
+  display: flex;
+  align-items: center;
+}
+
+.greeting-text {
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 10px;
+  color: #333;
+}
+
+.info-link {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.info-link i {
+  margin-right: 5px;
+}
+
+.info-link:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+.logout-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.logout-btn i {
+  margin-right: 5px;
+}
+
+.logout-btn:hover {
+  background-color: #c82333;
+}
+
+.cart-link {
+  font-size: 16px;
+  color: #007bff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.cart-link i {
+  margin-right: 5px;
+}
+
+.cart-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .info-container {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px 15px;
+  }
+
+  .info-left, .info-right {
+      margin-bottom: 10px;
+  }
+}
